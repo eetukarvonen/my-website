@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Karvonen - IT Enthusiast</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 id="nav-header">
+                    <a href="index.html">Eetu Karvonen</a>
+                    <div class="language">
+                        <a href="../en/thesis.html">En</a>
+                        /
+                        <a href="../fi/thesis.html">Fi</a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <div class="container grid">
+                <div class="banner-text">
+                    <h1>Jyrsinkoneen seuranta pilvipalvelussa</h1>
+                    <p>Oman kandidaatintyöni aihe oli suunnitella järjestelmä, jolla saadaan Oulun yliopistolla olevan jyrsinkoneen seuranta pilvipalveluun</p>
+                    <p>Kandidaatintyöni voit lukea <a href="/files/Laitteen tilaseuranta pilvipalveluun_PDFA.pdf">täältä.</a></p>
+                    
+                </div>
+                <div>
+                    <div class="banner-image">
+                        <img src="../img/thesis.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main section-->
+        <div class="container cv-main">
+            <p>
+                Minulla oli aluksi vaikeuksia löytää motivaatiota kandidaatintyöni tekemiseen, mutta lopulta löysin aiheen, joka oli hyvin mielenkiintoinen. Oulun yliopistolla
+                on jyrsinkone, jonka käyttöä halutaan valvoa, ettei kukaan mene käynnistämään konetta ilman lupaa. Työni aihe oli suunnitella järjestelmä, joka mahdollistaa
+                jyrsinkoneen tilan seuraamisen etänä. Kun jyrsinkone käynnistetään, lähtee tapahtumasta ilmoitus netin välityksellä.
+            </p>
+            <p>
+                Käytin järjestelmän toteuttamiseen NodeMCU nimistä Arduino-korttia, jossa on WiFi-yhteys. NodeMCU tunnistaa digitaalisen sisääntulon avulla milloin 
+                kone käynnistyy ja lähettää tiedon pilvipalveluun. Käytetty pilvipalvelu oli <a href="https://ubidots.com">Ubidots.</a>
+            </p>
+            <p>
+                Näin sain rakennettua yksinkertaisen ja todella halvan järjestelmän, joka on minusta hyvin nerokas, kun ottaa huomioon hinnan. Samaa periaatetta
+                hyödyntäen järjestelmäähän voi laajentaa vaikka minkälaiseen anturointiin tahansa.
+            </p>
+            <p>
+                Näin jälestäpäin mietittynä työssä olisi voinut pohtia enemmän juuri muita sovellusmahdollisuuksia, mutta motivaationi pelkkään kirjottamiseen alkoi
+                jo loppua kohden hiipumaan ja halusin vain saada työn alta pois. Lisäksi olisin halunnut pohtia enemmän myös tietoturvaan liittyviä näkökulmia, 
+                sillä olen pitkään ollut kiinnostunut ja seurannut tietoturvakenttää ja mielestäni tietoturvan tärkeyttä ei ymmärretä tarpeeksi hyvin.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#169 2020 Eetu Karvonen
+    </footer>
+</body>
+</html>

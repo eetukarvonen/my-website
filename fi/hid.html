@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Karvonen - IT Enthusiast</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 id="nav-header">
+                    <a href="index.html">Eetu Karvonen</a>
+                    <div class="language">
+                        <a href="../en/hid.html">En</a>
+                        /
+                        <a href="../fi/hid.html">Fi</a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <div class="container grid">
+                <div class="banner-text">
+                    <h1>Langaton ja kustomoitava HID-laite</h1>
+                    <p>
+                        Arduinon avulla on mahdollista antaa komentoja langattomasti. Rakensin kustomoitavan HID-laitteen (Human Input Device), samalla oppien langattomasta radiokommunikaatiosta.
+                    </p>
+                    <p>
+                        Pdf-raportin, jonka tein laitteesta hienomekaniikan kurssia varten voit lukea <a href="/files/HID_laite.pdf">täältä.</a>
+                    </p>
+                </div>
+
+                <div class="banner-image">
+                    <img src="../img/parts.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--Main section-->
+        <div class="container cv-main">
+            <p><b>Tämä projekti on hyvä esimerkki siitä, miten tykkään suuresti, kun pääsen kehittelemään ja testaamaan jotain uuttaa tapaa tehdä jokin asia.</b>
+            </p>
+            <p>
+                Alkumotivaationa tämän laitteen kehittämiseen oli oma tarve tällaiselle laitteelle. Vietän paljon aikaa tietokoneella ja katsellen kaikenlaisia 
+                videoita. Joskus vuonna 2018 sain idean, että olisipa kätevää kun olisi jokin pieni laite, jonka voisi kiinnittää vaikka ranteeseen ja antaa 
+                sillä komentoja tietokoneelle langattomasti, vaikka samalla kun tekee ruokaa. Yritin etsiä valmista tuotetta tähän tarkoitukseen, mutta en 
+                löytänyt mistään sopivaa. Niinpä ajattelin kokeilla rakentaa sellaisen itse.
+            </p>
+            <h2>Vaatimuksia</h2>
+            <p>
+                Laitteen tulisi pystyä kontrolloimaan hiirtä sekä lähettämään näppäinpainalluksia. Olen käyttänyt jo pitkään selainlaajennusta nimeltä 
+                "Video speed controller", jolla pystyy todella kätevästi säätämään videon nopeutta, kelailemaan videoita jne.
+                HID-laite yhdistettynä video speed controller laajennuksen kanssa olisi hyvä yhdistelmä, jolla pystyy kontrolloimaan videoita, ilman että tarvitsee
+                joka kerta kävellä tietokoneelle.
+            </p>
+            <p>
+                Tutkittuani asiaa jonkin aikaa halusin kokeilla sellaista toteutusta, jossa käytän kahta Arduino Pro Micro kontrolleria. Toinen Arduino ottaa 
+                inputit eli esim. napinpainallukset vastaan ja lähettää tiedon niistä langattomasti toiselle Arduinolle, joka välittää tiedon USB-väylää pitkin 
+                tietokoneelle. Tässä toteutuksessa pääsisin tutustumaan, miten radiokommunikaatio käytännössä toimii kahden Arduinon välillä. Radiokommunikoinnista
+                vastaa 433 MHz taajuudella toimivat RF-lähetin-vastaanotin pari. Kaikki komponentit näkyvät yläpuolella olevassa kuvassa: Arduino Pro Micro, 
+                Joystick-tyylinen input Arduinolle, RF-lähetin ja -vastaanotin sekä pari painonappia. Joystickiä ajattelin käyttää hiiren liikuttamiseen.
+            </p>
+            <p>
+                Keväällä 2019 kävin yliopistossa hienomekaniikan kurssia, johon tein harjoitustyön tästä HID-laitteesta. Harjoitustyön tarkoituksena oli testailla
+                hienomekaniikan tekniikoita ja tämä projekti oli melko hyvä siihen tarkoitukseen. Suunnittelin laitteele kotelon ja valmistin sen 3d-tulostamalla
+                yliopiston Fablabissa.
+            </p>
+            <p>
+                Valmista tuotetta en saanut aikaiseksi, vaan ennemminkin prototyyppimäisen laitteen. Kotelo osoittautui liian pieneksi, sillä komponenttien juottaminen
+                johtojen avulla vei yllättävän paljon tilaa.
+            </p><br>
+            <div class="project-pics">
+                <div class="project-pic">
+                    <img src="../img/assembly.jpg" alt="">
+                </div>
+                <div class="project-pic">
+                    <img src="../img/assembled.jpg" alt="">
+                </div>
+            </div><br>
+            <p>
+                Vaikka valmista tuotetta en saanutkaan aikaiseksi, prototyyppi toimi erittäin hyvin todistamaan, että suunnittelemani systeemi toimi kuin unelma. 
+                Viivettä laitteella ei ollut käytännössä yhtään, vaan napinpainallus välittyi tietokoneelle välittömästi. Oli erittäin tyydyttävää, kun pääsi 
+                kokeilemaan itse suunnittelemaa tapaa tehdä jotain uutta ja kun systeemi vielä toimi erittäin hyvin.
+            </p>
+            <p>
+                Tähän laitteeseen en ole enää käyttänyt aikaa, sillä löysin lopultakin valmiin tuotteen Ebaysta, joka ajaa asiansa. Hyvin erikoista, ettei vastaavaa tuotetta
+                löydä mistään Suomesta, enkä meinannut löytää tätä ulkomailtakaan. Mutta Ebaysta saa ulkomailta kuitenkin tilattua Wechip W1 tai W2 nimistä "ilmahiirtä"/näppäimistöä.
+                Kyseessä on käytännössä kaukosäätimen muotoon pakattu ohjain, jossa on myös näppäimistö. USB-dongle vain kiinni tietokoneeseen ja inputit voi syöttää langattomasti.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#169 2020 Eetu Karvonen
+    </footer>
+</body>
+</html>

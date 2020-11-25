@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Karvonen - IT Enthusiast</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 id="nav-header">
+                    <a href="index.html">Eetu Karvonen</a>
+                    <div class="language">
+                        <a href="../en/thesis.html">En</a>
+                        /
+                        <a href="../fi/thesis.html">Fi</a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <div class="container grid">
+                <div class="banner-text">
+                    <h1>Monitoring of the milling machine in the cloud</h1>
+                    <p>My bachelor's thesis subject was to design a system that monitors a milling machine in the cloud.</p>
+                    <p>My full bachelor's thesis can be read from <a href="/files/Laitteen tilaseuranta pilvipalveluun_PDFA.pdf">here.</a></p>
+                    
+                </div>
+                <div>
+                    <div class="banner-image">
+                        <img src="../img/thesis.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main section-->
+        <div class="container cv-main">
+            <p>Initially I had some difficulties at finding the motivation for bachelor's thesis but finally I was able to find subject that was pretty interesting. In the University of Oulu there is a milling machine.
+                My subject was to desing a system that enables monitoring of the machine remotely. When the machine is turned on, the system sends a notification about the event.
+            </p>
+            <p>
+                I used the Arduino NodeMCU microcontroller which has a Wifi-connectivity. NodeMCU uses digital input to detect when the machine is turned on and sends the information to cloud service called
+                <a href="https://ubidots.com">Ubidots.</a>
+            </p>
+            <p>
+                I think the system is quite ingenious when considering the simplicity and the price. The same principle of the system can be extended to monitor what ever wanted, not just on/off information.
+            </p>
+            <p>
+                Afterwards I think I could have discussed more about other applications the system could be used for in the thesis, but I was losing my motivation for writing and just wanted to get the thesis done. I also could 
+                have discussed more about information security because I am very intrested about cyber security area and I think that it is a subject that importance of it is not understood well enough.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#169 2020 Eetu Karvonen
+    </footer>
+</body>
+</html>

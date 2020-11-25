@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Karvonen - IT Enthusiast</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 id="nav-header">
+                    <a href="index.html">Eetu Karvonen</a>
+                    <div class="language">
+                        <a href="../en/routery.html">En</a>
+                        /
+                        <a href="../fi/routery.html">Fi</a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <div class="container grid">
+                <div class="banner-text">
+                    <h1>Raspberry Pi Reititin, Routery</h1>
+                    <p>Konfigurin Raspberry Pi 3B:n toimimaan kodin WLAN AP:na.</p>
+                    
+                </div>
+                <div>
+                    <div class="banner-image">
+                        <img src="../img/raspi3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main section-->
+        <div class="container">
+            <p>
+                Jokin aika sitten kotonani ei ollut ollenkaan WLAN:ia, vaan yhdistin internetiin suoraan ethernet kaapelilla. Minulla oli Raspberry Pi 3B ylimääräisenä
+                nurkissa, joten aloin tutkimaan olisiko siitä mahdollista värkätä "reititin" jakamaan WLAN. Löysin <a href="https://github.com/Phoenix1747/RouteryPi">tämän github repon</a>
+                ja siinä olleita ohjeita seuraamalla sain konfiguroitua Raspberryn siten, että pystyin jakamaan internetin WLAN:in avulla.
+
+            </p>
+            <p>
+                Nyt kun mietin näin jälestäpäin, kyseessä ei ole varmaankaan mikään turvallisin ratkaisu tietoturvan kannalta. Routery ei ollutkaan minulla käytössä kovin pitkään,
+                vaan ostin ihan oikean reitittimen. En myöskään suosittele Raspberryä käytettävän samalla tavalla kuin kuvassa, vaan suosittelen ostamaan Raspberry Pi:lle
+                tarkoitetun kotelon mm. oikosulkujen välttämiseksi.
+            </p>
+            <p>
+                Kun olin saanut käyttööni oikean reitittimen, sain Raspberryni uuteen käyttöön ja niinpä konfiguroin siitä seuraavaksi <a href="pihole.html">kotiverkon mainosblokkerin</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#169 2020 Eetu Karvonen
+    </footer>
+</body>
+</html>

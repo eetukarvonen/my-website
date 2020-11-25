@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Karvonen - IT Enthusiast</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 id="nav-header">
+                    <a href="index.html">Eetu Karvonen</a>
+                    <div class="language">
+                        <a href="../en/routery.html">En</a>
+                        /
+                        <a href="../fi/routery.html">Fi</a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <div class="container grid">
+                <div class="banner-text">
+                    <h1>Raspberry Pi router, Routery</h1>
+                    <p>I configured Raspberry Pi to work as a WLAN AP.</p>
+                    
+                </div>
+                <div>
+                    <div class="banner-image">
+                        <img src="../img/raspi3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main section-->
+        <div class="container">
+            <p>Some time ago I didn't have WLAN in my apartment but only ethernet cable plugged into my only computer.
+                I had a Raspberry Pi 3B lying around so I started searching would it be possible to use it as a WLAN router. I found <a href="https://github.com/Phoenix1747/RouteryPi">this github repo</a>
+                and following the instructions I was able to configure Raspberry so that I could plug the ethernet cable 
+                to Raspberry Pi and connect to WLAN emitted by it.
+            </p>
+            <p>
+                Now when I think this probably is not the safest solution (security wise) but soon I ended up buying a real router.
+                Also I don't suggest using Raspberry Pi the way I do in the picture. Rather buy a real case to prevent unwanted shortages.
+            </p>
+            <p>
+                After I got a real router I changed my Raspberry Pi to <a href="pihole.html">LAN-wide adblocker.</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#169 2020 Eetu Karvonen
+    </footer>
+</body>
+</html>

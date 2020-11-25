@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eetu Karvonen - IT Enthusiast</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 id="nav-header">
+                    <a href="index.html">Eetu Karvonen</a>
+                    <div class="language">
+                        <a href="../en/hid.html">En</a>
+                        /
+                        <a href="../fi/hid.html">Fi</a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Banner-->
+        <div class="banner">
+            <div class="container grid">
+                <div class="banner-text">
+                    <h1>Customizable HID-device</h1>
+                    <p>I was interested about wireless radiocommunication with Arduino and built a customizable Human Input Device, or HID, that can be used 
+                        to give instructions to computer wirelessly.
+                    </p>
+                    <p>Full pdf-report of the device which I made for university course "precision engineering" can be found <a href="/files/HID_laite.pdf">here.</a>
+                    </p>
+                </div>
+
+                <div class="banner-image">
+                    <img src="../img/parts.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--Main section-->
+        <div class="container cv-main">
+            <p><b>This project is a good example of my interest in playing around and innovating with systems related to computer science.</b>
+            </p>
+            <p>
+                I spend lots of time on the computer and also watching all kinds of videos on the computer. Around 2018 I started thinking it would be nice 
+                if I had a small "device" that I could for example attach to my wrist and then control my computer wirelessly while cooking for example. 
+                I started searching for such a device but couldn't find anything that would be good for this purpose so I thought I could 
+                try to build one by myself using Arduino.
+            </p>
+            <h2>Requirements</h2>
+            <p>
+                I thought the device should be able to control mouse and give keystrokes. I have been using browser extension called "Video speed controller", 
+                that can be used for what it is named for. Using keystrokes you can easily adjust the speed of any video, skip ahead, rewind, 
+                fastforward etc. So with video speed controller extension and HID-device I could wirelessly control videos without walking 
+                every time to computer desk.
+            </p>
+            <p>
+                After doing some research I wanted to try using Arduino Pro Micro as the brain of the project. Actually two of these. One would be taking the inputs
+                and sending commands wirelessly, and other would receive wireless commands and giving them to computer via USB. Radiocommunication between the arduinos
+                would happen using cheap RF-transmitter-receiver pair. All the components are in the picture of above. Arduino, joystick-input for arduino, RF-transmitter
+                and -receiver and couple push buttons.
+            </p>
+            <p>
+                In spring 2019 I attended precision engineering course in the University of Oulu and I made an exercise work from this HID device. The scope of
+                the exercise work was to test precision mechanics techniques and this project was pretty good for that. I desinged a case for the device and then I 
+                was fortunate to be able to 3d-print the case in fablab of university.
+            </p>
+            <p>
+                The end result as a product was pretty bad, but it was meant to be kind of a prototype. The components after soldered together using jumpingwires 
+                would not fit inside perfectly becouse the case was little too small.
+            </p><br>
+            <div class="project-pics">
+                <div class="project-pic">
+                    <img src="../img/assembly.jpg" alt="">
+                </div>
+                <div class="project-pic">
+                    <img src="../img/assembled.jpg" alt="">
+                </div>
+            </div><br>
+            <p>
+                As a proof of concept the input device did work like a charm. I was able to get inputs wirelessly to computer and I was surprised how well it 
+                worked. Delay was basically instant. It was so satisfying to come up with this totally new way of doing something and to be able to get it to work 
+                just as I expected.
+            </p>
+            <p>
+                This "product" is not worth my time anymore, because I found a good product from Ebay to solve original desire to control computer remotly with small 
+                device. That product is Wechip W1 or W2 "airmouse"/keyboard. It is basically a remote controller which has also a keyboard. It is not perfect for my
+                purposes because I would like to have even smaller device but that is the best there is on the market at the moment. And it is interesting that 
+                I haven't been able to find any similiar product from the Finnish market. Only way to get good product for my purposes is to order it from abroad.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#169 2020 Eetu Karvonen
+    </footer>
+</body>
+</html>
