@@ -127,6 +127,15 @@ p {
     padding-right: 20px;
 }
 
+.hello-text {
+    font-size: larger;
+}
+
+.hello-img img{
+    margin: 50px;
+    border-radius: 10px;
+}
+
 /* CV */
 
 .cv-main {
@@ -207,7 +216,7 @@ footer {
 
 @media (max-width: 847px) {
     .navbar {
-        height: 130px;
+        height: 160px;
     }
 
     .navbar .flex {
@@ -229,6 +238,11 @@ footer {
     
     .project-pics {
         grid-template-columns: 1fr
+    }
+
+    .hello-img img{
+        width: 20%;
+        height: 20%;
     }
 }
 
